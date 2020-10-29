@@ -29,6 +29,6 @@ cat domains | httprobe | tee https-subs.txt
 
        
 
-echo "${green}Spider and search for  vulnerability...  "
+echo "${red}Spider and search for  vulnerability...  "
 python3 zspider.py
 
