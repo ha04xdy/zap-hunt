@@ -6,7 +6,6 @@ import pyfiglet
 
 spidersub = open("https-subs.txt", "r") #the file contain subdomains you want to spider 
 apikey = 'olg7ai1777h7ff0353gafnok9l' # you can get this from tools > option > apikey
-#os.mkdir('spiderurl') # only for linux
 
 #can't have a python script without a cool logo :D
 word = pyfiglet.figlet_format("zap-hunt")
