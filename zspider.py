@@ -4,17 +4,20 @@ import os
 from pprint import pprint
 import pyfiglet
 
-spidersub = open("https-subs.txt", "r") #the file contain subdomains you want to spider 
-apikey = 'olg7ai1777h7ff0353gafnok9l' # you can get this from tools > option > apikey
 
 #can't have a python script without a cool logo :D
 word = pyfiglet.figlet_format("zap-hunt")
 
 print (word )
 
+spidersub = open("https-subs.txt", "r") #the file contain subdomains you want to spider 
+apikey = 'olg7ai1777h7ff0353gafnok9l' # you can get this from tools > option > apikey
+os.mkdir('spiderurl') # only for linux
+ 
 for sub in spidersub :
     sub1=sub.strip()
     joined = os.path.join(sub1[8:] +".txt")
+    spiderurl = open('./spiderurl/' + joined, "a+")
     spiderurl.write("spider-urls for " + sub)
     spiderurl.write("=" * (16 + len(str(sub))) + '\n')
     zap =ZAPv2(apikey=apikey, proxies={'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'})
