@@ -29,7 +29,7 @@ you need to install (zaproxy ,  httprobe , subfinder , OWASP ZAP Python API)
   
   cd zap-hunt && sudo chmod +x zap-hunt.sh zspider.py
   
-  ./zap-hunt.sh  "your subdomain here"
+  bash zap-hunt.sh  "your subdomain here"
   ```
 
 
