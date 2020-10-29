@@ -15,7 +15,6 @@ print (word )
 for sub in spidersub :
     sub1=sub.strip()
     joined = os.path.join(sub1[8:] +".txt")
-    spiderurl = open('./spiderurl/' + joined, "a+")
     spiderurl.write("spider-urls for " + sub)
     spiderurl.write("=" * (16 + len(str(sub))) + '\n')
     zap =ZAPv2(apikey=apikey, proxies={'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'})
