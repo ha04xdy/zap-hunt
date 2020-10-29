@@ -14,12 +14,11 @@ you need to install (zaproxy ,  httprobe , subfinder , OWASP ZAP Python API)
 
 
 
-you need  to change api key and the port ZAP runs on (defaults to 8080) on zspider.py line 8 , 22  
-```python
-apikey = 'olg7ai1777h7ff0353gafnok9l' # you can get this from tools > option > apikey
-zap =ZAPv2(apikey=apikey, proxies={'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'})
-
-```
+    you need  to change api key and the port ZAP runs on (defaults to 8080) on zspider.py line 8 , 22  
+    ```python
+    apikey = 'olg7ai1777h7ff0353gafnok9l' # you can get this from tools > option > apikey
+    zap =ZAPv2(apikey=apikey, proxies={'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'})
+    ```
 
 
 
@@ -29,6 +28,25 @@ zap =ZAPv2(apikey=apikey, proxies={'http': 'http://127.0.0.1:8080', 'https': 'ht
 * > git clone https://github.com/hamddy/zap-hunt.git
 * > cd zap-hunt && sudo chmod +x zap-hunt.sh zspider.py
 * > ./zap-hunt.sh  "your subdomain here"
+
+
+
+
+# Main features
+ * search for subdomains 
+ * looking for http and https
+ * spider and scan with zaproxy
+ 
+ 
+ 
+ 
+
+# Screenshot
+  ![GitHub Logo](1.png)
+  ![GitHub Logo](2.png)
+  ![GitHub Logo](3.png)
+
+ 
  
  
  
