@@ -25,7 +25,7 @@ you need to install (zaproxy ,  httprobe , subfinder , OWASP ZAP Python API)
 
 # Usage 
  ```python
-  git clone https://github.com/hamddy/zap-hunt.git
+  git clone https://github.com/ha04xdy/zap-hunt.git
   
   cd zap-hunt && sudo chmod +x zap-hunt.sh zspider.py
   
