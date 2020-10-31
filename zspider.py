@@ -1,6 +1,7 @@
 import time
 from zapv2 import ZAPv2
 import os
+import platform
 from pprint import pprint
 import pyfiglet
 
@@ -12,7 +13,12 @@ print (word )
 
 spidersub = open("https-subs.txt", "r") #the file contain subdomains you want to spider 
 apikey = 'olg7ai1777h7ff0353gafnok9l' # you can get this from tools > option > apikey
-os.mkdir('spiderurl') # only for linux
+if platform.system() == "Linux" :
+	if not os.path.exists("spiderurl"):
+		os.mkdir('spiderurl') # only for linux
+        
+
+
  
 for sub in spidersub :
     sub1=sub.strip()
@@ -41,6 +47,6 @@ for sub in spidersub :
     # Print vulnerabilities found by the scanning
     print('Hosts: {}'.format(', '.join(zap.core.hosts)))
     print('Alerts: ')
-    print(zap.core.alerts(baseurl=sub))
+    pprint(zap.core.alerts(baseurl=sub1))
 
 	
